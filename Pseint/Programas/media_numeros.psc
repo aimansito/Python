@@ -11,7 +11,7 @@ Algoritmo media_numeros
 			Escribir 'Has introducido un número negativo'
 			Escribir 'La media es : ', media
 		SiNo
-			div = div + 1
+			div <- div+1
 			suma <- suma+num
 			media <- suma/div
 		FinSi
