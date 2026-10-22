@@ -1,5 +1,8 @@
-import math
-nota1 = int(input("Introduce la nota del primer examen"))
-mediaDeseada = int(input("Introduce la media deseada"))
-nota2 = (mediaDeseada - nota1 * 0.4) / 0.6
-print("Para tener la nota media de un ",mediaDeseada, " tienes que sacar un ",nota2," en el segundo examen")
+mat = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+
+print(mat[0, 0])   # Esquina superior izquierda -> 1
+print(mat[1, 2])   # Fila 1, columna 2 -> 6
+print(mat[-1, -1])  # Último elemento -> 9
+print(mat[-2, -2])

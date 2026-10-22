@@ -4,8 +4,8 @@ Algoritmo multiplicaciones
 	
 	Para i <- 1 Hasta 10 Hacer
 		//1. Generar dos números al azar 
-		num1 <- Aleatorio(1,10)
-		num2 <- Aleatorio(1,10)
+		num1 <- Aleatorio(1,100)
+		num2 <- Aleatorio(1,100)
 		correcta <- num1 * num2 
 		//2. Preguntar
 		Escribir "Pregunta ", i, ": ¿Cuánto es ", num1 ," x ", num2, "?"
