@@ -1,18 +1,20 @@
-Funcion encontrada <- Contiene(texto,letra)
-	//Recibe un texto y una letra. Devuelve Verdadero si la letra
-	// aparece en el texto, y Falso sino aparece
+Funcion encontrada <- Contiene(texto, letra)
 	Definir encontrada Como Logico
 	Definir i Como Entero
 	
+	// Suponemos que no está hasta que la encontremos
 	encontrada <- Falso
-	i <- 0
-	//Recorremos el texto casilla a casilla mientras no la encontremos
-	//Se usa Mientras (y no para) porque el texto puede estar vacío
-	Mientras i < Longitud(texto) Y No encontrada Hacer
-		Si Subcadena(texto,i,i) = letra Entonces
-			encontrada <- Verdadero
-		FinSi
-	FinMientras
+	
+	// Solo recorremos el texto si no está vacío
+	// (al principio de la partida, "usadas" está vacía)
+	Si Longitud(texto) > 0 Entonces
+		Para i <- 0 Hasta Longitud(texto) - 1 Hacer
+			// Si la casilla i es la letra buscada, la hemos encontrado
+			Si SubCadena(texto, i, i) = letra Entonces
+				encontrada <- Verdadero
+			FinSi
+		FinPara
+	FinSi
 FinFuncion
 Funcion resultado <- PalabraOculta(secreta,usadas)
 	//Recibe la palabra secretea y las letras que ya se han dicho
