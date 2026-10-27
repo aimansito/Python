@@ -2,7 +2,7 @@ Algoritmo random
 	Definir num, numeroSecreto, intentos Como Entero
 	numeroSecreto <- Aleatorio(0,100)
 	intentos <- 10
-	
+
 	Mientras intentos > 0 Hacer
 		Escribir "Introduce un número del 0 al 100"
 		Leer num 
