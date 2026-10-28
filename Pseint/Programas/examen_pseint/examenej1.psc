@@ -1,26 +1,27 @@
 Funcion cadenaCifrada <- cifrar(mensaje,n)
-	Definir msj Como Cadena
-	Definir i Como Entero
-	Definir resultado Como Caracter
-	msj <- Minusculas(mensaje) 
-	resultado <- "" 
-	Para  i <- 0 Hasta Longitud(mensaje) Hacer
-		resultado <-  
-	FinPara
+	Definir cadenaCifrada Como Caracter
 FinFuncion
-FinPara
 Funcion cadenaDesCifrada <- descifrar(mensaje,n)
+	Definir cadenaDesCifrada Como Caracter 
+FinFuncion
 
 
 Algoritmo examenej1
-	// Declarar 
-	Definir frase Como Cadena
-	Definir letra Como Caracter 
-	Definir n Como Entero
-	Escribir "Introduce una frase: "
-	Leer frase 
+	Definir mensaje Como Caracter
+	Definir n, op Como Entero
+	Escribir "Bienvenido al programa cifrado por cesar"
+	Escribir "Introduzca el mensaje a cifrar/descifrar"
+	Leer mensaje
 	Repetir
-		Escribir "Introduce el numero de caracteres que debe avanzar las letras: "
+		Escribir "Introduzca el valor de la clave [1-25]"
 		Leer n 
-	Hasta Que n >= 1 O n <> 25 
+	Hasta Que n >= 1 Y n <= 25
+	Repetir
+		Escribir "Introduzca la opción deseada"
+		Leer op 
+		Segun op Hacer
+			1: Escribir "El mensaje cfrado es: ", cifrar(mensaje, n)
+			2: Escribir "El mensaje descifrado es: ", descifrar(mensaje,n)
+		FinSegun
+	Hasta Que op = 3 
 FinAlgoritmo
