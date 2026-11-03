@@ -12,4 +12,4 @@ t_py_mmult = time.perf_counter() - t0
 
 t0 = time.perf_counter()
 _ = datos *  1.08
-t_np_mult = time.perf_counter() - t0
+t_np_mult = time.perf_counter() - t0 
