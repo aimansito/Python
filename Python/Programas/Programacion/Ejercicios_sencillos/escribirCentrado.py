@@ -11,3 +11,5 @@ def escribir_centrado(texto):
 
     print(margen + texto)
     print(subrayado + texto)
+mensaje = input("Introduce un mensaje: ")
+escribir_centrado(mensaje)

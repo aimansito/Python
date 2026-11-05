@@ -9,6 +9,13 @@
 import numpy as np 
 
 #fijar la semilla
+
 np.random.seed(42)
+
+
 #Genera 10.000 filas y 2 columnas con valores
-coordenadas = np.random.random((10000, 2))
+n = 10000
+x = np.random.random(n)
+y = np.random.random(n)
+
+#calcula el cuadrad de la distancia al origen (x al cuadrado y y al cuadrado)
