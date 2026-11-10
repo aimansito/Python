@@ -24,4 +24,4 @@ num2 = int(input("Introduce el segundo número"))
 if num1 <= 0 or num2 <= 0:
     print("Los numeros deben ser enteros positivos")
 else: 
-    print(f"El MCD de {num1} y {num2} es {mcd(num1,num2)}")
+    print(f"El MCD de {num1} y {num2} es {(mcd(num1,num2))}")
