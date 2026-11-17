@@ -1,0 +1,1 @@
+#Escribe un programa que muestre tu horario de clase cad amodlo o asignatura debe mostrarse en un color diferente 
