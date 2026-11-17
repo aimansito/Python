@@ -8,3 +8,5 @@ mostrar_tablero, colocar_ficha(tablero,fichax,y)
 hay ganador(tablero)
 
 juego_terminado(tablero)
+
+typehintin

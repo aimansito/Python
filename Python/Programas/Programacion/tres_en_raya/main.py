@@ -21,3 +21,28 @@ def crear_tablero():
         tablero.append(nueva_fila)
         
     return tablero
+
+def simbolo_ficha(ficha):
+  if ficha == FICHA_0:
+    return "0" 
+  elif ficha == FICHA_X:
+    return "X"
+
+  return " "
+
+
+def mostrar_tablero(tablero):
+  tamanio = len(tablero)
+
+  print()
+  print("     1   2   3")
+
+  for fila in range(tamanio):
+    # Empezamos la línea con el número de fila (fila + 1 para el usuario)
+    linea = f"  {fila + 1} "
+
+    for columna in range(tamanio):
+      linea += f" {simbolo_ficha(tablero[fila][columna])} "
+
+    if columna < TAMANIO - 1:
+      linea = " | "

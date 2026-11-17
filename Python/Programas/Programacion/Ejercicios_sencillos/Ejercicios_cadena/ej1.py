@@ -1,6 +1,5 @@
 # Ejercicio 1: escribir por pantalla cada carácter de una cadena
 
-# Pedimos una cadena por teclado
 cadena = input("Introduce una cadena: ")
 
 # Recorremos la cadena carácter a carácter

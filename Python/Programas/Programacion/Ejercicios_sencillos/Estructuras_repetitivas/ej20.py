@@ -1,10 +1,7 @@
 # Ejercicio 20: mostrar los N primeros números primos
 
-# Pedimos cuántos primos queremos
 n = int(input("¿Cuántos números primos quieres mostrar? "))
-# Contador de primos encontrados
 encontrados = 0
-# Número que vamos a comprobar (el primer primo es el 2)
 numero = 2
 # Repetimos hasta encontrar N primos
 while encontrados < n:
