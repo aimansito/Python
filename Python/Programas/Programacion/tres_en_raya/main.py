@@ -121,15 +121,24 @@ def pedir_numero(mensaje, minimo, maximo):
     
   return int(texto)
 
-#Devuelve true si el texto no está vacío y todos sus caracteres son dígitos
-def es_numero(texto):
-  #Un texto vacío no es número
-  if len(texto) == 0:
-    return False
 
-  #Recorremos el texto caracter a caracter
-  for caracter in texto:
-    if caracter < "0" or caracter > "9":
-    #No es número 
-     return False
-  return True
+
+#Pide un número entero entre mínimo y máximo (ambos incluidos) y lo vuelve a pedir hasta que sea correcto
+def pedirNombre(mensaje):
+  nombre = input(mensaje)
+
+  while len(nombre) == 0 :
+    print("El nombre no puede estar vacio.")
+    print(mensaje)
+
+  return nombre; 
+
+
+def preguntarOtraPartida():
+  respuesta = ("¿Quieres jugar otra partida?(s/n)")
+  
+  while(respuesta!="s" and respuesta!="n"):
+    print("Responde para si, s y responde para No, n");
+    respuesta = print("¿Quieres jugar otra partida(s/n):").strip().lower();
+
+  return respuesta == "s"
